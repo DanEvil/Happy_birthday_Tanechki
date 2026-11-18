@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>С днём рождения!</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="img/favic.webp" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+  <div class="header__container">
+    <nav class="header__nav">
+      <ul class="header__list">
+        <li class="header__list-item">
+          <a class="header__list-link" href="#" data-image="img/1.jpg" data-title="Моя любимая жена!!!">
+            <span>С днём рождения</span>
+          </a>
+        </li>
+        <li class="header__list-item">
+          <a class="header__list-link" href="#" data-image="img/cake.png" data-title="Вкуснейший тортик">
+            <span>Твои подарки</span>
+          </a>
+        </li>
+        <li class="header__list-item">
+          <a id="another-gift" class="header__list-link" href="#" data-image="img/bol.webp" data-title="Ой, какие красивые шарики">
+            
+            <span>Твои подарки</span>
+          </a>
+        </li>
+        <li class="header__list-item">
+          <a class="header__list-link" href="#" data-image="img/avtor.jpg" data-title="Спасибо тебе, автор">
+            <span>Поблагодарить автора</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- Модальное окно для картинок -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <div class="lightbox__overlay" data-close></div>
+  <div class="lightbox__box" role="dialog" aria-modal="true">
+    <button class="lightbox__close" type="button" data-close aria-label="Закрыть">&times;</button>
+    <h3 class="lightbox__title" id="lightboxTitle"></h3>
+    <div class="memory-gallery">
+  <button class="memory-gallery__arrow" id="memory-prev" type="button"
+          aria-label="Предыдущая фотография">‹</button>
+
+  <img class="lightbox__image" id="lightboxImage" src="" alt="">
+
+  <button class="memory-gallery__arrow" id="memory-next" type="button"
+          aria-label="Следующая фотография">›</button>
+</div>
+<p class="memory-gallery__counter" id="memory-counter"></p>
+
+<video id="lightboxVideo" controls playsinline hidden>
+  <source src="video/VID_predl.mp4" type="video/mp4">
+  Ваш браузер не поддерживает видео.
+</video>
+
+  </div>
+  </div>
+
+<main>
+<section class="hero">
+  <div class="hero__container">
+    <div class="hero__content">
+      <img class="hero__image" src="img/0.0.jpg " alt="Улыбка">
+      <div class="hero__text">
+        <h1 class="hero__title">
+  Дорогая жена,<br>
+  поздравляю<br>
+  тебя с днём<br>
+  рождения!
+        </h1>
+        <p class="hero__desc">
+          Тебе сегодня 25 лет. Давай вспомним, как это было...
+        </p>
+        <div class="hero__button-wrap">
+<button class="button" id="scroll-to-beginning" type="button">
+  <span class="button-text">
+    НАЖИМАЙ
+    <span class="reflection"></span>
+  </span>
+</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="beginning" id="beginning">
+  <div class="beginning__container">
+    <div class="beginning__row">
+      <div class="beginning__images">
+        <img class="beginning__image" src="img/1.1.jpg" alt="">
+        <img class="beginning__image" src="img/1.2.jpg" alt="">
+      </div>
+      <div class="beginning__content">
+        <h2 class="feature__title">25 ноября 2001 года — мой первый день</h2>
+        <p class="beginning__desc">
+          Небо было необычно тёплым и совсем не характерным для конца ноября:
+          тепло-розовым и немного волшебным. Над землёй летел аист — не простой,
+          а с большой люлькой из облаков. Внутри, уютно завёрнутая в белое одеяло,
+          лежала девочка.
+        </p>
+        <p class="beginning__desc">
+          Аиста звали строго по-деловому — Профессор Клювович. Он очень гордился
+          своей работой, потому что доставлял детей точно в срок и никогда не
+          путал адреса.
+        </p>
+        <p class="beginning__desc">
+          Дорога была непростая и долгая, но аист летел уверенно: он знал,
+          что внизу уже ждут самые важные люди — её будущие родители.
+        </p>
+        <p class="beginning__desc">
+          Когда он прилетел к окну, было раннее утро. Профессор Клювович постучал
+          клювом — тихо, чтобы не спугнуть чудо.
+        </p>
+        <p class="beginning__desc">
+          Аист торжественно вручил тебя маме, кивнул папе как старшему коллеге
+          по счастью и улетел. А ты открыла глаза, посмотрела на новый мир и
+          решила: пусть он будет интересным. С тех пор, говорят, рядом с тобой
+          всегда немного согревается даже ноябрь.
+        </p>
+      </div>
+      <div class="beginning__gallery">
+  <img src="img/1.3.jpg" alt="">
+  <img src="img/1.4.jpg" alt="Фото из первого раздела">
+  <img src="img/1.5.jpg" alt="Фото из первого раздела">
+</div>
+
+    </div>
+  </div>
+</section>
+
+<section class="childhood" id="childhood">
+  <div class="beginning__container">
+  <div class="childhood__row">
+    <div class="childhood__content">
+      <h2 class="feature__title__1glava">Детство</h2>
+        <p class="beginning__desc__1">
+          Девочку назвали Татьяной — красивым, звучным и светлым именем, которое удивительно шло её ясным и любопытным глазам.
+        </p>
+        <p class="beginning__desc__1">
+          С самого раннего детства в доме Тани царила особая, деятельная атмосфера. 
+          Папа Михаил, мастер на все руки и опытный электрик, умел не только зажигать 
+          гирлянды на ёлке и чинить любые приборы, но и всегда повторял дочке, что в 
+          каждом человеке есть своя внутренняя «искра», которую важно беречь. А мама Наташа, 
+          учитель физкультуры и в детском саду, и в школе, заряжала всех неиссякаемой энергией, 
+          учила Танечку быть сильной, ловкой и никогда не унывать перед трудностями.
+        </p>
+        <p class="beginning__desc__1">
+          Когда Таня пошла в детский сад, а затем и в школу, каждый день приносил ей новые открытия,
+           интересные занятия и маленькие поводы для радости. Близким с ней всегда было весело, спокойно 
+           и тепло — сказывался тот самый добрый розовый ноябрь. Она с удовольствием играла в подвижные игры на маминых уроках, 
+          внимательно наблюдала, как папа находит и исправляет неисправности в сложных схемах, 
+          но её собственное призвание открылось неожиданно.
+        </p>
+        <p class="beginning__desc__1">
+          Однажды на перемене один из её школьных друзей упал и сильно разбил коленку. Пока вокруг 
+          все охали и суетились, Таня спокойно подошла, успокоила плачущего товарища, нашла салфетку, 
+          помогла дойти до медпункта и держала его за руку, пока медсестра обрабатывала ссадину. 
+          В тот миг Таня почувствовала удивительное тепло в груди и поняла: её суперсила — это забота. 
+          Она твёрдо решила, что вырастет и станет настоящим доктором, чтобы лечить людей, возвращать 
+          им силы и дарить здоровье.
+        </p>
+        <p class="beginning__desc__1">
+          Родители с радостью поддержали мечту дочери: папа подарил ей первую настоящую энциклопедию по 
+          анатомии, а мама учила основам здоровья и выносливости. Школьные годы летели весело и ярко, 
+          наполненные крепкой дружбой, интересными уроками и уверенным движением к великой и благородной 
+          цели.
+        </p>
+      </div>
+      <div class="childhood__images">
+      <img src="img/2.1.jpg" alt="Таня в детстве">
+      <img src="img/2.3.jpg" alt="Таня в детстве">
+  <section class="memories">
+  <button class="memories__button" id="open-memory-gallery" type="button">
+    Посмотреть фотографии <span aria-hidden="true">♥</span>
+  </button>
+</section>
+    </div>
+   
+
+      
+    </div>
+  </div>
+    </div>
+</section>
+ <section class="institute" id="institute">
+  <div class="beginning__container">
+
+    <div class="institute__row">
+      <img class="institute__photo"
+           src="img/3.0.jpg"
+           alt="Таня у медицинского института">
+
+      <div class="institute__content">
+        <h2 class="institute__title">Медицинский институт</h2>
+
+        <p>Когда Таня выросла, детская мечта стала её настоящей целью. Она поступила в медицинский институт — впереди её ждали годы учёбы и путь к профессии, о которой она мечтала.</p>
+
+        <p>Учиться было непросто. Лекции сменялись практическими занятиями, а экзамены заставляли волноваться. Таня переживала, старалась всё запомнить и снова возвращалась к конспектам.</p>
+
+        <p>Бывали дни, когда усталость брала верх, но Таня не сдавалась. Шаг за шагом она преодолевала трудности и продолжала идти к своей цели.</p>
+
+        <p>Наконец годы стараний остались позади: экзамены сданы, институт окончен. Таня достойно прошла этот путь и приблизилась к своей мечте — заботиться о людях и помогать им.</p>
+      </div>
+
+      <img class="institute__photo"
+           src="img/3.1.jpg"
+           alt="Таня после окончания института">
+    </div>
+
+    <div class="institute__gallery">
+      <img src="img/3.2.jpg" alt="Таня с родителями">
+
+      <div class="parents-heart">
+        <button class="parents-heart__button" id="parents-heart" type="button"
+                aria-label="Отправить сердечко родителям">♥</button>
+        <p>Спасибо вам,<br>любимые родители</p>
+      </div>
+
+      <img src="img/3.3.jpg" alt="Таня с родителями">
+    </div>
+
+  </div>
+</section>
+
+
+<section class="siberia" id="siberia">
+  <div class="beginning__container">
+
+    <div class="siberia__layout">
+      <div class="siberia__side">
+        <img src="img/4.7.jpg" alt="Таня и её муж">
+        <img src="img/4.6.jpg" alt="Семейная фотография">
+      </div>
+
+      <div class="siberia__story">
+        <h2 class="siberia__title">Новая глава — вместе</h2>
+
+        <div class="siberia__text">
+          <p>Во время учёбы Таня познакомилась с молодым человеком, который постепенно стал для неё самым близким и родным. Их объединяли тёплые разговоры, поддержка и общие мечты.</p>
+          <p>Когда учёба осталась позади, Таня и её любимый поженились. Вскоре после свадьбы они отправились в новую главу своей жизни — переехали в дальний гарнизон в Сибири.</p>
+          <p>Вдали от родных мест, среди незнакомых просторов, они вместе обустраивали новый дом, поддерживали друг друга и создавали свою семейную историю.</p>
+        </div>
+
+        <div class="siberia__video">
+          <button class="memories__button" id="show-video" type="button"
+                  aria-expanded="false" aria-controls="birthday-video">
+            Самый важный момент в моей жизни ♥
+          </button>
+
+          
+        </div>
+      </div>
+
+      <div class="siberia__side">
+        <img src="img/4.1.jpg" alt="Таня и её муж">
+        <img src="img/4.2.jpg" alt="Семейная фотография">
+      </div>
+    </div><!-- конец .siberia__layout -->
+
+    <div class="siberia__gallery">
+      <img src="img/4.3.jpg" alt="Семейное фото">
+      <img src="img/4.4.jpg" alt="Семейное фото">
+      <img src="img/4.5.jpg" alt="Жизнь в новом месте">
+    </div>
+
+  </div><!-- конец .beginning__container -->
+</section>
+
+
+ 
+</div>
+
+  </div>
+</section>
+
+
+</main>
+
+<button class="back-to-top" id="back-to-top" type="button"
+        aria-label="Вернуться в начало" title="В начало">
+  ↑
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
